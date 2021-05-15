@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/initials.svg">
     <title>{{.Title}} | Pure Serendipity Weddings</title>
     <style>
+        :root {
+            --pink: #e11375;
+            --dark-pink: #bb1061;
+            --light-pink: #f268aa;
+        }
         img.cover {
             display: block;
             max-width: 50%;
             max-height: 50%;
             margin: auto;
         }
-        h2 {
+        h2, h3, h4, h5, h6 {
             font-family: 'Bitter', serif;
         }
         p {
@@ -21,7 +27,7 @@
         div.links {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
             max-width: 800px;
             margin: auto;
             margin-top: 30px;
@@ -69,6 +75,53 @@
         div.form-element {
             padding: 10px;
         }
+
+        .btn.btn-primary {
+            background-color: var(--pink);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Raleway;
+            box-shadow: none;
+        }
+        i.social-media-icon {
+            font-size: 3em;
+            margin: 20px;
+            color: var(--pink);
+        }
+        i.social-media-icon:hover {
+            color: var(--dark-pink);
+        }
+        a.btn {
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Raleway;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background-color: var(--pink);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--dark-pink);
+        }
+        .btn-secondary {
+            background-color: #ccc;
+        }
+
+        .btn-secondary:hover {
+            background-color: #bbb;
+        }
+
+        @media screen {
+            .headshot {
+                max-width: 40%;
+                display: inline;
+                float: left;
+                padding: 20px;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>

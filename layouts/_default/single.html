@@ -1,11 +1,11 @@
 {{ partial "header" . }}
 <body>
     <div class="links">
-        <a href="/"><img src="/title.svg" alt="Pure Serendipity"></a>
+        <a href="/"><img src="/initials.svg" alt="Pure Serendipity"></a>
         {{ partial "links" }}
     </div>
     <div class="content">
-        <h2>{{.Title}}</h2>
+        {{if not .Params.hide_title}}<h2>{{.Title}}</h2>{{end}}
         {{.Content}}
     </div>
 </body>
