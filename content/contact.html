@@ -3,6 +3,10 @@ kind: page
 title: Contact Us
 ---
 
+<div id="email-sent-alert" class="alert alert-success" style="display: none;">
+    Inquiry sent! We'll get back to you soon.
+</div>
+
 <h3>Contact us for general questions or event inquiries<!--or follow us on social media-->!</h3>
 <a href="mailto:info@pureserendipityweddings.com">info@pureserendipityweddings.com</a>
 <br>
@@ -109,5 +113,9 @@ title: Contact Us
         document.getElementById(`unsure-about-${input_name}-checkbox`).addEventListener("change", function(e) {
             document.getElementById(`${input_name}-input`).disabled = this.checked;
         });
+    }
+    let fragment = window.location.hash.substr(1);
+    if (fragment === "email-sent") {
+        document.getElementById('email-sent-alert').style.display = "block";
     }
 </script>
