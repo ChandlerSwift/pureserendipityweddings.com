@@ -20,25 +20,25 @@ title: Contact Us
 
 <h3>For a specific inquiry, please fill out the form below</h3>
 
-<form action="/inquiries/404" method="POST">
+<form action="https://email-handler.chandlerswift.workers.dev/" method="POST">
     <div class="form-element">
         <label for="name-input">Name</label>
-        <input type="text" name="name" id="name-input" required>
+        <input type="text" name="Name" id="name-input" required>
     </div>
 
     <div class="form-element">
         <label for="email-input">Email</label>
-        <input type="email" name="email" id="email-input" required>
+        <input type="email" name="Email" id="email-input" required>
     </div>
 
     <div class="form-element">
         <label for="phone-input">Phone Number</label>
-        <input type="tel" name="phone" id="phone-input" required>
+        <input type="tel" name="Phone" id="phone-input" required>
     </div>
 
     <div class="form-element">
         <label for="contact-method-input">Preferred method of contact</label>
-        <select name="contact-method" id="contact-method-input" required>
+        <select name="Preferred method of contact" id="contact-method-input" required>
             <option value="email">email</option>
             <option value="call">call</option>
             <option value="text">text</option>
@@ -47,58 +47,58 @@ title: Contact Us
 
     <div class="form-element">
         <label for="event-date-input">Date of Event</label>
-        <input type="date" name="date" id="date-input" required>
-        <input type="checkbox" name="unsure-about-date" id="unsure-about-date-checkbox">
+        <input type="date" name="Date of Event" id="date-input" required>
+        <input type="checkbox" name="Date of Event" id="unsure-about-date-checkbox" value="unsure">
         <label for="unsure-about-date-checkbox">Unsure</label>
     </div>
 
     <div class="form-element">
         <label for="location-input">Location/Venue Name</label>
-        <input type="text" name="location" id="location-input" required>
-        <input type="checkbox" name="unsure-about-location" id="unsure-about-location-checkbox">
+        <input type="text" name="Location/Venue Name" id="location-input" required>
+        <input type="checkbox" name="Location/Venue Name" id="unsure-about-location-checkbox" value="unsure">
         <label for="unsure-about-location-checkbox">Unsure</label>
     </div>
 
     <div class="form-element">
         <label for="guest-count-input">Estimated Guest Count</label>
-        <input type="number" name="guest-count" id="guest-count-input" value="50" required>
-        <input type="checkbox" name="unsure-about-guest-count" id="unsure-about-guest-count-checkbox">
+        <input type="number" name="Estimated Guest Count" id="guest-count-input" value="50" required>
+        <input type="checkbox" name="Estimated Guest Count" id="unsure-about-guest-count-checkbox" value="unsure">
         <label for="unsure-about-guest-count-checkbox">Unsure</label>
     </div>
 
     <div class="form-element">
         <label for="event-type-input">Event type</label>
-        <input type="text" name="event-type" id="event-type-input" placeholder="wedding, graduation, &hellip;" required>
+        <input type="text" name="Event type" id="event-type-input" placeholder="wedding, graduation, &hellip;" required>
     </div>
 
     <div class="form-element">
         <label for="services-input">Service(s) you're interested in</label>
         <br>
-        <input type="checkbox" name="service-month-of-coordination" id="service-month-of-coordination-checkbox">
+        <input type="checkbox" name="Interested in month-of service" id="service-month-of-coordination-checkbox" value="yes">
         <label for="service-month-of-coordination-checkbox">Month-of coordination</label>
         <br>
-        <input type="checkbox" name="service-partial-planning" id="service-partial-planning-checkbox">
+        <input type="checkbox" name="Interested in partial planning service" id="service-partial-planning-checkbox" value="yes">
         <label for="service-partial-planning-checkbox">Partial planning</label>
         <br>
-        <input type="checkbox" name="service-full-planning" id="service-full-planning-checkbox">
+        <input type="checkbox" name="Interested in full planning service" id="service-full-planning-checkbox" value="yes">
         <label for="service-full-planning-checkbox">Full planning</label>
         <br>
-        <!--<input type="checkbox" name="service-alacarte-services" id="service-alacarte-services-checkbox">
+        <!--<input type="checkbox" name="Interested in a la carte services" id="service-alacarte-services-checkbox" value="yes">
         <label for="service-alacarte-services-checkbox">A la carte</label>-->
     </div>
     <div class="form-element">
         <label for="budget-input">Approximate budget</label>
-        <input type="number" name="budget" id="budget-input" required>
-        <input type="checkbox" name="unsure-about-budget" id="unsure-about-budget-checkbox">
+        <input type="number" name="Budget" id="budget-input" required>
+        <input type="checkbox" name="Budget" id="unsure-about-budget-checkbox" value="unsure">
         <label for="unsure-about-budget-checkbox">Unsure</label>
     </div>
     <div class="form-element">
         <label for="vision-statement-input">Tell us about your vision!</label>
-        <textarea name="vision" id="vision-statement-input" required></textarea>
+        <textarea name="Tell us about your vision" id="vision-statement-input" required></textarea>
     </div>
     <div class="form-element">
         <label for="hear-about-us-input">How did you hear about us?</label>
-        <input type="text" name="hear-about-us" id="hear-about-us-input" required>
+        <input type="text" name="How did you hear about us" id="hear-about-us-input" required>
     </div>
     <div class="form-element">
         <input type="submit" value="Submit">
