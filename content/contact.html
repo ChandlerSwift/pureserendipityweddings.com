@@ -24,7 +24,15 @@ title: Contact Us
 
 <h3>For a specific inquiry, please fill out the form below</h3>
 
-<form action="https://email-handler.chandlerswift.workers.dev/" method="POST">
+<script>
+    let alreadySubmitted = false;
+    function once() {
+        let ret = ! alreadySubmitted;
+        alreadySubmitted = true;
+        return ret;
+    }
+</script>
+<form action="https://email-handler.chandlerswift.workers.dev/" method="POST" onsubmit="return once()">
     <div class="form-element">
         <label for="name-input">Name</label>
         <input type="text" name="Name" id="name-input" required>
