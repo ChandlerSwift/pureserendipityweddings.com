@@ -87,8 +87,12 @@
             font-family: Raleway;
             box-shadow: none;
         }
+        div.social-media {
+            display: flex;
+            justify-content: center;
+        }
         i.social-media-icon {
-            font-size: 3em;
+            font-size: 2em;
             margin: 20px;
             color: var(--pink);
         }
@@ -130,13 +134,12 @@
             cursor: pointer;
         }
 
-        @media screen {
-            .headshot {
-                max-width: 40%;
-                display: inline;
-                float: left;
-                padding: 20px;
-            }
+        .headshots {
+            display: flex;
+        }
+        .headshot {
+            max-width: 50%;
+            padding: 20px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Raleway" rel="stylesheet">
