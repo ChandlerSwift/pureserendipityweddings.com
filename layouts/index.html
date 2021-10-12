@@ -18,5 +18,21 @@
     <div class="links" id="nav">
         {{ partial "links"}}
     </div>
+    <div class="content">
+        <div class="center">
+            <img class="logo-centered" src="/images/logo-horizontal-black.svg">
+        </div>
+        <h2 class="center" style="margin-top: -25px;">Weddings and Events</h2>
+        <p class="center" style="font-size: 1.5em;">Welcome, we're so happy you're here!</p>
+        <div class="gallery">
+            {{- $images := slice "invite_flowers.jpg" "326.jpg" "220.jpg" -}}
+            {{ range $images }}
+                {{- $path := printf "images/%s" .}}
+                {{- $image := resources.Get $path -}}
+                {{- $image = $image.Resize "x500" }}
+                <img src="{{ $image.RelPermalink }}" />
+            {{ end }}
+        </div>
+    </div>
 </body>
 </html>

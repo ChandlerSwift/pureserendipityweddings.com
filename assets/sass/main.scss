@@ -42,8 +42,28 @@ div.home-header {
             filter: drop-shadow(0 0 4px #000) drop-shadow(0 0 4px #000);;
         }
     }
-
 }
+
+.center {
+    text-align: center;
+}
+
+img.logo-centered {
+    width: 75%;
+    margin: auto;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+    img {
+        margin: 5px;
+        height: 250px;
+    }
+}
+
 h2, h3, h4, h5, h6 {
     font-family: 'Bitter', serif;
 }
