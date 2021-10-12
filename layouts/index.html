@@ -33,6 +33,29 @@
                 <img src="{{ $image.RelPermalink }}" />
             {{ end }}
         </div>
+        <div class="links-grid">
+            <div><img src='{{- ((resources.Get "images/023.jpg").Fill "500x500 smart").RelPermalink -}}' alt="Bouquet"></div>
+            <div>
+                <a href="/about/">
+                    <h3>Get to Know Us</h3>
+                    <p>We can't wait to get to know you, but in the meantime, you can read some about us!</p>
+                </a>
+            </div>
+            <div><img src='{{- ((resources.Get "images/304.jpg").Fill "500x500 center").RelPermalink -}}' alt="Cake closeup"></div>
+            <div style="grid-">
+                <a href="/packages/">
+                    <h3>Our Services</h3>
+                    <p>View our fully customizable packages</p>
+                </a>
+            </div>
+            <div><img src='{{- ((resources.Get "images/001.jpg").Fill "500x500 center").RelPermalink -}}' alt="Interior of church"></div>
+            <div>
+                <a href="/contact/">
+                    <h3>Let's Get Started!</h3>
+                    <p>We'll schedule a complimentary consultation to start creating your dream day!</p>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
