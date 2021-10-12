@@ -1,8 +1,21 @@
 {{ partial "header" }}
 <body>
-    <img class="cover" src="title.svg" alt="Pure Serendipity">
-    <h2 style="text-align: center;">Weddings and Events</h2>
-    <div class="links">
+    {{- $image := resources.Get "images/040.jpg" -}}
+    {{- $image = ($image.Filter images.Grayscale).Resize "2000x" }}
+    <div class="home-header" style='background: url("{{ $image.RelPermalink }}") no-repeat center center/cover fixed;'>
+        <picture>
+            <source srcset="/images/logo-stacked.svg" media="(min-width: 1400px)"/>
+            <source srcset="/images/logo-horizontal.svg" media="(min-width: 600px)"/>
+            <img src="/images/logo-stacked.svg" alt="Pure Serendipity"/>
+            <!--<h2 style="width: 100%; text-align: center;">Weddings and Events</h2>-->
+        </picture>
+        <div class="down-container">
+            <a href="#nav">
+                <i class="fas fa-2x fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="links" id="nav">
         {{ partial "links"}}
     </div>
 </body>

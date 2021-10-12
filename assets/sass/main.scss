@@ -5,11 +5,44 @@
     --light-pink: #f268aa;
     --faded-light-pink: rgba(242, 104, 170, 0.5)
 }
-img.cover {
-    display: block;
-    max-width: 50%;
-    max-height: 50%;
-    margin: auto;
+
+body {
+    margin: 0px;
+}
+
+div.home-header {
+    position: relative;
+    // https://www.w3docs.com/snippets/css/how-to-convert-an-image-into-a-grayscale-image-using-html-css.html
+    // Instead of here, this is now done inline in the HTML so we can use a Hugo resource for the image.
+    // background: url("/main-header.jpg") no-repeat center center fixed/*, #fff*/;
+    // background-size: cover;
+    // background-blend-mode: luminosity;
+    height: calc(100vh - 80px); // https://stackoverflow.com/questions/27256849/is-it-possible-to-use-vh-minus-pixels-in-a-css-calc
+
+    img {
+        padding-top: calc(min(50px, 10vh));
+        padding-left: calc(min(50px, 10vh));
+        filter:  drop-shadow(0 0 4px #000);
+        display: block;
+        max-width: calc(100vw - 2 * min(50px, 10vh));
+        max-height: 50%;
+    }
+
+    .down-container {
+        position: absolute;
+        bottom: 1rem;
+        text-align: center;
+        width: 100%;
+
+        i {
+            color: #fff;
+            filter:  drop-shadow(0 0 4px #000);
+        }
+        i:hover {
+            filter: drop-shadow(0 0 4px #000) drop-shadow(0 0 4px #000);;
+        }
+    }
+
 }
 h2, h3, h4, h5, h6 {
     font-family: 'Bitter', serif;
@@ -23,8 +56,8 @@ div.links {
     justify-content: space-between;
     max-width: 800px;
     margin: auto;
-    margin-top: 30px;
     align-items: center;
+    height: 80px;
 }
 div.links img {
     height: 50px;
