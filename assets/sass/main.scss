@@ -92,12 +92,15 @@ div.links-grid {
     }
 }
 
+* {
+    font-family: 'Raleway';
+    line-height: 150%;
+}
+
 h2, h3, h4, h5, h6 {
     font-family: 'Bitter', serif;
 }
-p {
-    font-family: 'Raleway';
-}
+
 div.links {
     display: flex;
     flex-direction: row;
